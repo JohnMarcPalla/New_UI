@@ -139,7 +139,7 @@
             this.groupBox1.Controls.Add(this.textBox1);
             this.groupBox1.Controls.Add(this.btnCheckout);
             this.groupBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F);
-            this.groupBox1.Location = new System.Drawing.Point(513, 225);
+            this.groupBox1.Location = new System.Drawing.Point(507, 225);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Padding = new System.Windows.Forms.Padding(3, 3, 3, 10);
             this.groupBox1.Size = new System.Drawing.Size(200, 251);
@@ -322,12 +322,13 @@
             this.iconButton2.Text = "Cancel";
             this.iconButton2.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.iconButton2.UseVisualStyleBackColor = true;
+            this.iconButton2.Click += new System.EventHandler(this.iconButton2_Click);
             // 
             // labelTime
             // 
             this.labelTime.AutoSize = true;
             this.labelTime.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.labelTime.Location = new System.Drawing.Point(544, 597);
+            this.labelTime.Location = new System.Drawing.Point(539, 505);
             this.labelTime.Name = "labelTime";
             this.labelTime.Size = new System.Drawing.Size(144, 17);
             this.labelTime.TabIndex = 13;
@@ -337,7 +338,7 @@
             // 
             this.label8.AutoSize = true;
             this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.label8.Location = new System.Drawing.Point(529, 580);
+            this.label8.Location = new System.Drawing.Point(524, 488);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(91, 17);
             this.label8.TabIndex = 14;
@@ -347,7 +348,7 @@
             // 
             this.label9.AutoSize = true;
             this.label9.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.label9.Location = new System.Drawing.Point(615, 580);
+            this.label9.Location = new System.Drawing.Point(610, 488);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(90, 17);
             this.label9.TabIndex = 15;

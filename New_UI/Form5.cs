@@ -10,16 +10,11 @@ using System.Windows.Forms;
 
 namespace New_UI
 {
-    public partial class frmNewTrans : Form
+    public partial class frmSalesRep : Form
     {
-        public frmNewTrans()
+        public frmSalesRep()
         {
             InitializeComponent();
-        }
-
-        private void iconButton2_Click(object sender, EventArgs e)
-        {
-            this.Close();
         }
     }
 }

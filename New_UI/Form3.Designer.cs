@@ -29,6 +29,12 @@
         private void InitializeComponent()
         {
             this.pnlMain = new System.Windows.Forms.Panel();
+            this.pnlLogo = new System.Windows.Forms.Panel();
+            this.iconButton1 = new FontAwesome.Sharp.IconButton();
+            this.labelTime = new System.Windows.Forms.Label();
+            this.lblCurUser = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
             this.pnlInventory = new System.Windows.Forms.Panel();
             this.iconButton5 = new FontAwesome.Sharp.IconButton();
             this.iconButton6 = new FontAwesome.Sharp.IconButton();
@@ -38,18 +44,13 @@
             this.iconButton2 = new FontAwesome.Sharp.IconButton();
             this.btnSales = new FontAwesome.Sharp.IconButton();
             this.btnHome = new FontAwesome.Sharp.IconButton();
-            this.pnlLogo = new System.Windows.Forms.Panel();
-            this.iconButton1 = new FontAwesome.Sharp.IconButton();
-            this.labelTime = new System.Windows.Forms.Label();
-            this.lblCurUser = new System.Windows.Forms.Label();
-            this.label1 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
             this.pnlTitle = new System.Windows.Forms.Panel();
             this.btnExit = new FontAwesome.Sharp.IconButton();
+            this.pnlChildform = new System.Windows.Forms.Panel();
             this.pnlMain.SuspendLayout();
+            this.pnlLogo.SuspendLayout();
             this.pnlInventory.SuspendLayout();
             this.pnlSales.SuspendLayout();
-            this.pnlLogo.SuspendLayout();
             this.pnlTitle.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -67,6 +68,84 @@
             this.pnlMain.Name = "pnlMain";
             this.pnlMain.Size = new System.Drawing.Size(266, 700);
             this.pnlMain.TabIndex = 0;
+            // 
+            // pnlLogo
+            // 
+            this.pnlLogo.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(206)))), ((int)(((byte)(39)))), ((int)(((byte)(39)))));
+            this.pnlLogo.Controls.Add(this.iconButton1);
+            this.pnlLogo.Controls.Add(this.labelTime);
+            this.pnlLogo.Controls.Add(this.lblCurUser);
+            this.pnlLogo.Controls.Add(this.label1);
+            this.pnlLogo.Controls.Add(this.label3);
+            this.pnlLogo.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.pnlLogo.Location = new System.Drawing.Point(0, 567);
+            this.pnlLogo.Name = "pnlLogo";
+            this.pnlLogo.Size = new System.Drawing.Size(266, 133);
+            this.pnlLogo.TabIndex = 23;
+            // 
+            // iconButton1
+            // 
+            this.iconButton1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(237)))), ((int)(((byte)(54)))), ((int)(((byte)(56)))));
+            this.iconButton1.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.iconButton1.FlatAppearance.BorderSize = 0;
+            this.iconButton1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.iconButton1.Flip = FontAwesome.Sharp.FlipOrientation.Normal;
+            this.iconButton1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
+            this.iconButton1.IconChar = FontAwesome.Sharp.IconChar.PowerOff;
+            this.iconButton1.IconColor = System.Drawing.Color.Black;
+            this.iconButton1.IconSize = 25;
+            this.iconButton1.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.iconButton1.Location = new System.Drawing.Point(0, 92);
+            this.iconButton1.Name = "iconButton1";
+            this.iconButton1.Rotation = 0D;
+            this.iconButton1.Size = new System.Drawing.Size(266, 41);
+            this.iconButton1.TabIndex = 12;
+            this.iconButton1.Text = "Log Out";
+            this.iconButton1.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.iconButton1.UseVisualStyleBackColor = false;
+            this.iconButton1.Click += new System.EventHandler(this.iconButton1_Click);
+            // 
+            // labelTime
+            // 
+            this.labelTime.AutoSize = true;
+            this.labelTime.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
+            this.labelTime.Location = new System.Drawing.Point(68, 67);
+            this.labelTime.Name = "labelTime";
+            this.labelTime.Size = new System.Drawing.Size(144, 17);
+            this.labelTime.TabIndex = 11;
+            this.labelTime.Text = "05/29/2015 05:50 AM";
+            // 
+            // lblCurUser
+            // 
+            this.lblCurUser.AutoSize = true;
+            this.lblCurUser.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
+            this.lblCurUser.Location = new System.Drawing.Point(201, 44);
+            this.lblCurUser.Name = "lblCurUser";
+            this.lblCurUser.Size = new System.Drawing.Size(38, 17);
+            this.lblCurUser.TabIndex = 10;
+            this.lblCurUser.Text = "User";
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
+            this.label1.Location = new System.Drawing.Point(39, 44);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(156, 17);
+            this.label1.TabIndex = 9;
+            this.label1.Text = "You are Logged in as : ";
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.BackColor = System.Drawing.Color.Transparent;
+            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F);
+            this.label3.ForeColor = System.Drawing.Color.White;
+            this.label3.Location = new System.Drawing.Point(78, 11);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(117, 26);
+            this.label3.TabIndex = 8;
+            this.label3.Text = "C H A I R /";
             // 
             // pnlInventory
             // 
@@ -203,7 +282,7 @@
             this.iconButton2.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.iconButton2.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.iconButton2.UseVisualStyleBackColor = false;
-            
+            this.iconButton2.Click += new System.EventHandler(this.iconButton2_Click);
             // 
             // btnSales
             // 
@@ -253,84 +332,6 @@
             this.btnHome.UseVisualStyleBackColor = false;
             this.btnHome.Click += new System.EventHandler(this.btnHome_Click);
             // 
-            // pnlLogo
-            // 
-            this.pnlLogo.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(206)))), ((int)(((byte)(39)))), ((int)(((byte)(39)))));
-            this.pnlLogo.Controls.Add(this.iconButton1);
-            this.pnlLogo.Controls.Add(this.labelTime);
-            this.pnlLogo.Controls.Add(this.lblCurUser);
-            this.pnlLogo.Controls.Add(this.label1);
-            this.pnlLogo.Controls.Add(this.label3);
-            this.pnlLogo.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.pnlLogo.Location = new System.Drawing.Point(0, 567);
-            this.pnlLogo.Name = "pnlLogo";
-            this.pnlLogo.Size = new System.Drawing.Size(266, 133);
-            this.pnlLogo.TabIndex = 23;
-            // 
-            // iconButton1
-            // 
-            this.iconButton1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(237)))), ((int)(((byte)(54)))), ((int)(((byte)(56)))));
-            this.iconButton1.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.iconButton1.FlatAppearance.BorderSize = 0;
-            this.iconButton1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.iconButton1.Flip = FontAwesome.Sharp.FlipOrientation.Normal;
-            this.iconButton1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.iconButton1.IconChar = FontAwesome.Sharp.IconChar.PowerOff;
-            this.iconButton1.IconColor = System.Drawing.Color.Black;
-            this.iconButton1.IconSize = 25;
-            this.iconButton1.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.iconButton1.Location = new System.Drawing.Point(0, 92);
-            this.iconButton1.Name = "iconButton1";
-            this.iconButton1.Rotation = 0D;
-            this.iconButton1.Size = new System.Drawing.Size(266, 41);
-            this.iconButton1.TabIndex = 12;
-            this.iconButton1.Text = "Log Out";
-            this.iconButton1.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.iconButton1.UseVisualStyleBackColor = false;
-            this.iconButton1.Click += new System.EventHandler(this.iconButton1_Click);
-            // 
-            // labelTime
-            // 
-            this.labelTime.AutoSize = true;
-            this.labelTime.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.labelTime.Location = new System.Drawing.Point(68, 67);
-            this.labelTime.Name = "labelTime";
-            this.labelTime.Size = new System.Drawing.Size(144, 17);
-            this.labelTime.TabIndex = 11;
-            this.labelTime.Text = "05/29/2015 05:50 AM";
-            // 
-            // lblCurUser
-            // 
-            this.lblCurUser.AutoSize = true;
-            this.lblCurUser.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.lblCurUser.Location = new System.Drawing.Point(201, 44);
-            this.lblCurUser.Name = "lblCurUser";
-            this.lblCurUser.Size = new System.Drawing.Size(38, 17);
-            this.lblCurUser.TabIndex = 10;
-            this.lblCurUser.Text = "User";
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.label1.Location = new System.Drawing.Point(39, 44);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(156, 17);
-            this.label1.TabIndex = 9;
-            this.label1.Text = "You are Logged in as : ";
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.BackColor = System.Drawing.Color.Transparent;
-            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F);
-            this.label3.ForeColor = System.Drawing.Color.White;
-            this.label3.Location = new System.Drawing.Point(78, 11);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(117, 26);
-            this.label3.TabIndex = 8;
-            this.label3.Text = "C H A I R /";
-            // 
             // pnlTitle
             // 
             this.pnlTitle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(152)))), ((int)(((byte)(21)))), ((int)(((byte)(22)))));
@@ -360,12 +361,21 @@
             this.btnExit.UseVisualStyleBackColor = false;
             this.btnExit.Click += new System.EventHandler(this.btnExit_Click);
             // 
+            // pnlChildform
+            // 
+            this.pnlChildform.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.pnlChildform.Location = new System.Drawing.Point(266, 30);
+            this.pnlChildform.Name = "pnlChildform";
+            this.pnlChildform.Size = new System.Drawing.Size(734, 670);
+            this.pnlChildform.TabIndex = 22;
+            // 
             // frmEmployee
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(206)))), ((int)(((byte)(39)))), ((int)(((byte)(39)))));
             this.ClientSize = new System.Drawing.Size(1000, 700);
+            this.Controls.Add(this.pnlChildform);
             this.Controls.Add(this.pnlTitle);
             this.Controls.Add(this.pnlMain);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
@@ -374,10 +384,10 @@
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Cashier";
             this.pnlMain.ResumeLayout(false);
-            this.pnlInventory.ResumeLayout(false);
-            this.pnlSales.ResumeLayout(false);
             this.pnlLogo.ResumeLayout(false);
             this.pnlLogo.PerformLayout();
+            this.pnlInventory.ResumeLayout(false);
+            this.pnlSales.ResumeLayout(false);
             this.pnlTitle.ResumeLayout(false);
             this.ResumeLayout(false);
 
@@ -403,5 +413,6 @@
         public System.Windows.Forms.Label lblCurUser;
         private System.Windows.Forms.Panel pnlTitle;
         private FontAwesome.Sharp.IconButton btnExit;
+        private System.Windows.Forms.Panel pnlChildform;
     }
 }
