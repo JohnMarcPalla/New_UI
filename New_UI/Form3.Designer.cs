@@ -1,6 +1,6 @@
 ﻿namespace New_UI
 {
-    partial class frmMain
+    partial class frmEmployee
     {
         /// <summary>
         /// Required designer variable.
@@ -28,11 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.panel1 = new System.Windows.Forms.Panel();
-            this.pnlAdmin = new System.Windows.Forms.Panel();
-            this.iconButton8 = new FontAwesome.Sharp.IconButton();
-            this.iconButton9 = new FontAwesome.Sharp.IconButton();
-            this.btnAdmin = new FontAwesome.Sharp.IconButton();
+            this.pnlMain = new System.Windows.Forms.Panel();
             this.pnlInventory = new System.Windows.Forms.Panel();
             this.iconButton5 = new FontAwesome.Sharp.IconButton();
             this.iconButton6 = new FontAwesome.Sharp.IconButton();
@@ -48,110 +44,26 @@
             this.lblCurUser = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
-            this.panel1.SuspendLayout();
-            this.pnlAdmin.SuspendLayout();
+            this.pnlMain.SuspendLayout();
             this.pnlInventory.SuspendLayout();
             this.pnlSales.SuspendLayout();
             this.pnlLogo.SuspendLayout();
             this.SuspendLayout();
             // 
-            // panel1
+            // pnlMain
             // 
-            this.panel1.AutoScroll = true;
-            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(152)))), ((int)(((byte)(21)))), ((int)(((byte)(22)))));
-            this.panel1.Controls.Add(this.pnlAdmin);
-            this.panel1.Controls.Add(this.btnAdmin);
-            this.panel1.Controls.Add(this.pnlInventory);
-            this.panel1.Controls.Add(this.btnInventory);
-            this.panel1.Controls.Add(this.pnlSales);
-            this.panel1.Controls.Add(this.btnSales);
-            this.panel1.Controls.Add(this.btnHome);
-            this.panel1.Controls.Add(this.pnlLogo);
-            this.panel1.Dock = System.Windows.Forms.DockStyle.Left;
-            this.panel1.Location = new System.Drawing.Point(0, 0);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(283, 591);
-            this.panel1.TabIndex = 0;
-            // 
-            // pnlAdmin
-            // 
-            this.pnlAdmin.Controls.Add(this.iconButton8);
-            this.pnlAdmin.Controls.Add(this.iconButton9);
-            this.pnlAdmin.Dock = System.Windows.Forms.DockStyle.Top;
-            this.pnlAdmin.Location = new System.Drawing.Point(0, 538);
-            this.pnlAdmin.Name = "pnlAdmin";
-            this.pnlAdmin.Size = new System.Drawing.Size(266, 135);
-            this.pnlAdmin.TabIndex = 19;
-            // 
-            // iconButton8
-            // 
-            this.iconButton8.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(237)))), ((int)(((byte)(54)))), ((int)(((byte)(56)))));
-            this.iconButton8.Dock = System.Windows.Forms.DockStyle.Top;
-            this.iconButton8.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(152)))), ((int)(((byte)(21)))), ((int)(((byte)(22)))));
-            this.iconButton8.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.iconButton8.Flip = FontAwesome.Sharp.FlipOrientation.Normal;
-            this.iconButton8.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F);
-            this.iconButton8.IconChar = FontAwesome.Sharp.IconChar.UserPlus;
-            this.iconButton8.IconColor = System.Drawing.Color.Black;
-            this.iconButton8.IconSize = 25;
-            this.iconButton8.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.iconButton8.Location = new System.Drawing.Point(0, 67);
-            this.iconButton8.Name = "iconButton8";
-            this.iconButton8.Padding = new System.Windows.Forms.Padding(50, 0, 0, 0);
-            this.iconButton8.Rotation = 0D;
-            this.iconButton8.Size = new System.Drawing.Size(266, 67);
-            this.iconButton8.TabIndex = 16;
-            this.iconButton8.Text = "Create";
-            this.iconButton8.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.iconButton8.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.iconButton8.UseVisualStyleBackColor = false;
-            // 
-            // iconButton9
-            // 
-            this.iconButton9.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(237)))), ((int)(((byte)(54)))), ((int)(((byte)(56)))));
-            this.iconButton9.Dock = System.Windows.Forms.DockStyle.Top;
-            this.iconButton9.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(152)))), ((int)(((byte)(21)))), ((int)(((byte)(22)))));
-            this.iconButton9.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.iconButton9.Flip = FontAwesome.Sharp.FlipOrientation.Normal;
-            this.iconButton9.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F);
-            this.iconButton9.IconChar = FontAwesome.Sharp.IconChar.Users;
-            this.iconButton9.IconColor = System.Drawing.Color.Black;
-            this.iconButton9.IconSize = 25;
-            this.iconButton9.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.iconButton9.Location = new System.Drawing.Point(0, 0);
-            this.iconButton9.Name = "iconButton9";
-            this.iconButton9.Padding = new System.Windows.Forms.Padding(50, 0, 0, 0);
-            this.iconButton9.Rotation = 0D;
-            this.iconButton9.Size = new System.Drawing.Size(266, 67);
-            this.iconButton9.TabIndex = 15;
-            this.iconButton9.Text = "Manage Employee";
-            this.iconButton9.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.iconButton9.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.iconButton9.UseVisualStyleBackColor = false;
-            // 
-            // btnAdmin
-            // 
-            this.btnAdmin.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(237)))), ((int)(((byte)(54)))), ((int)(((byte)(56)))));
-            this.btnAdmin.Dock = System.Windows.Forms.DockStyle.Top;
-            this.btnAdmin.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(152)))), ((int)(((byte)(21)))), ((int)(((byte)(22)))));
-            this.btnAdmin.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnAdmin.Flip = FontAwesome.Sharp.FlipOrientation.Normal;
-            this.btnAdmin.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F);
-            this.btnAdmin.IconChar = FontAwesome.Sharp.IconChar.User;
-            this.btnAdmin.IconColor = System.Drawing.Color.Black;
-            this.btnAdmin.IconSize = 25;
-            this.btnAdmin.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnAdmin.Location = new System.Drawing.Point(0, 471);
-            this.btnAdmin.Name = "btnAdmin";
-            this.btnAdmin.Padding = new System.Windows.Forms.Padding(20, 0, 0, 0);
-            this.btnAdmin.Rotation = 0D;
-            this.btnAdmin.Size = new System.Drawing.Size(266, 67);
-            this.btnAdmin.TabIndex = 18;
-            this.btnAdmin.Text = "Admin";
-            this.btnAdmin.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnAdmin.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.btnAdmin.UseVisualStyleBackColor = false;
-            this.btnAdmin.Click += new System.EventHandler(this.btnAdmin_Click);
+            this.pnlMain.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(152)))), ((int)(((byte)(21)))), ((int)(((byte)(22)))));
+            this.pnlMain.Controls.Add(this.pnlLogo);
+            this.pnlMain.Controls.Add(this.pnlInventory);
+            this.pnlMain.Controls.Add(this.btnInventory);
+            this.pnlMain.Controls.Add(this.pnlSales);
+            this.pnlMain.Controls.Add(this.btnSales);
+            this.pnlMain.Controls.Add(this.btnHome);
+            this.pnlMain.Dock = System.Windows.Forms.DockStyle.Left;
+            this.pnlMain.Location = new System.Drawing.Point(0, 0);
+            this.pnlMain.Name = "pnlMain";
+            this.pnlMain.Size = new System.Drawing.Size(266, 689);
+            this.pnlMain.TabIndex = 0;
             // 
             // pnlInventory
             // 
@@ -161,7 +73,7 @@
             this.pnlInventory.Location = new System.Drawing.Point(0, 336);
             this.pnlInventory.Name = "pnlInventory";
             this.pnlInventory.Size = new System.Drawing.Size(266, 135);
-            this.pnlInventory.TabIndex = 17;
+            this.pnlInventory.TabIndex = 22;
             // 
             // iconButton5
             // 
@@ -226,7 +138,7 @@
             this.btnInventory.Padding = new System.Windows.Forms.Padding(20, 0, 0, 0);
             this.btnInventory.Rotation = 0D;
             this.btnInventory.Size = new System.Drawing.Size(266, 67);
-            this.btnInventory.TabIndex = 16;
+            this.btnInventory.TabIndex = 21;
             this.btnInventory.Text = "Inventory";
             this.btnInventory.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnInventory.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
@@ -241,7 +153,7 @@
             this.pnlSales.Location = new System.Drawing.Point(0, 134);
             this.pnlSales.Name = "pnlSales";
             this.pnlSales.Size = new System.Drawing.Size(266, 135);
-            this.pnlSales.TabIndex = 15;
+            this.pnlSales.TabIndex = 20;
             // 
             // iconButton3
             // 
@@ -306,7 +218,7 @@
             this.btnSales.Padding = new System.Windows.Forms.Padding(20, 0, 0, 0);
             this.btnSales.Rotation = 0D;
             this.btnSales.Size = new System.Drawing.Size(266, 67);
-            this.btnSales.TabIndex = 14;
+            this.btnSales.TabIndex = 19;
             this.btnSales.Text = "Sales";
             this.btnSales.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnSales.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
@@ -330,7 +242,7 @@
             this.btnHome.Padding = new System.Windows.Forms.Padding(20, 0, 0, 0);
             this.btnHome.Rotation = 0D;
             this.btnHome.Size = new System.Drawing.Size(266, 67);
-            this.btnHome.TabIndex = 13;
+            this.btnHome.TabIndex = 18;
             this.btnHome.Text = "Home";
             this.btnHome.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnHome.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
@@ -346,10 +258,10 @@
             this.pnlLogo.Controls.Add(this.label1);
             this.pnlLogo.Controls.Add(this.label3);
             this.pnlLogo.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.pnlLogo.Location = new System.Drawing.Point(0, 673);
+            this.pnlLogo.Location = new System.Drawing.Point(0, 561);
             this.pnlLogo.Name = "pnlLogo";
             this.pnlLogo.Size = new System.Drawing.Size(266, 128);
-            this.pnlLogo.TabIndex = 0;
+            this.pnlLogo.TabIndex = 23;
             // 
             // iconButton1
             // 
@@ -415,18 +327,16 @@
             this.label3.TabIndex = 8;
             this.label3.Text = "C H A I R /";
             // 
-            // frmMain
+            // frmEmployee
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(206)))), ((int)(((byte)(39)))), ((int)(((byte)(39)))));
-            this.ClientSize = new System.Drawing.Size(984, 591);
-            this.Controls.Add(this.panel1);
-            this.MinimumSize = new System.Drawing.Size(1000, 630);
-            this.Name = "frmMain";
-            this.Text = "ADMIN";
-            this.panel1.ResumeLayout(false);
-            this.pnlAdmin.ResumeLayout(false);
+            this.ClientSize = new System.Drawing.Size(1052, 689);
+            this.Controls.Add(this.pnlMain);
+            this.Name = "frmEmployee";
+            this.Text = "Form3";
+            this.pnlMain.ResumeLayout(false);
             this.pnlInventory.ResumeLayout(false);
             this.pnlSales.ResumeLayout(false);
             this.pnlLogo.ResumeLayout(false);
@@ -437,25 +347,21 @@
 
         #endregion
 
-        private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.Panel pnlLogo;
-        private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Label label1;
-        private FontAwesome.Sharp.IconButton iconButton1;
-        private System.Windows.Forms.Label labelTime;
-        private FontAwesome.Sharp.IconButton btnHome;
-        private System.Windows.Forms.Panel pnlSales;
-        private FontAwesome.Sharp.IconButton iconButton2;
-        private FontAwesome.Sharp.IconButton btnSales;
+        private System.Windows.Forms.Panel pnlMain;
         private System.Windows.Forms.Panel pnlInventory;
         private FontAwesome.Sharp.IconButton iconButton5;
         private FontAwesome.Sharp.IconButton iconButton6;
         private FontAwesome.Sharp.IconButton btnInventory;
+        private System.Windows.Forms.Panel pnlSales;
         private FontAwesome.Sharp.IconButton iconButton3;
-        private System.Windows.Forms.Panel pnlAdmin;
-        private FontAwesome.Sharp.IconButton iconButton8;
-        private FontAwesome.Sharp.IconButton iconButton9;
-        private FontAwesome.Sharp.IconButton btnAdmin;
+        private FontAwesome.Sharp.IconButton iconButton2;
+        private FontAwesome.Sharp.IconButton btnSales;
+        private FontAwesome.Sharp.IconButton btnHome;
+        private System.Windows.Forms.Panel pnlLogo;
+        private FontAwesome.Sharp.IconButton iconButton1;
+        private System.Windows.Forms.Label labelTime;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label label3;
         public System.Windows.Forms.Label lblCurUser;
     }
 }

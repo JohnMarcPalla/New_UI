@@ -19,9 +19,25 @@ namespace New_UI
 
         private void btnLogin_Click(object sender, EventArgs e)
         {
-            frmMain main = new frmMain();
-            this.Hide();
-            main.Show();
+            if (textBox1.Text == "admin" && textBox2.Text == "password") 
+            {
+                frmMain main = new frmMain();
+                main.lblCurUser.Text = textBox1.Text;
+                this.Hide();
+                main.Show();
+
+            }
+            else if (textBox1.Text == "user" && textBox2.Text == "pass")
+            {
+                frmEmployee employee = new frmEmployee();
+                employee.lblCurUser.Text = textBox1.Text;
+                this.Hide();
+                employee.Show();
+            }
+
+
+
+
         }
     }
 }

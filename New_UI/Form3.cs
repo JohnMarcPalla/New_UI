@@ -1,11 +1,18 @@
 ﻿using System;
+using System.Collections.Generic;
+using System.ComponentModel;
+using System.Data;
+using System.Drawing;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace New_UI
 {
-    public partial class frmMain : Form
+    public partial class frmEmployee : Form
     {
-        public frmMain()
+        public frmEmployee()
         {
             InitializeComponent();
             labelTime.Text = DateTime.Now.ToString("dddd, dd MMMM yyyy");
@@ -15,7 +22,7 @@ namespace New_UI
         {
             pnlSales.Visible = false;
             pnlInventory.Visible = false;
-            pnlAdmin.Visible = false;
+           
         }
         private void menuHide()
         {
@@ -23,8 +30,7 @@ namespace New_UI
                 pnlSales.Visible = false;
             if (pnlInventory.Visible == true)
                 pnlInventory.Visible = false;
-            if (pnlAdmin.Visible == true)
-                pnlAdmin.Visible = false;
+           
         }
         private void menuOpen(Panel panel)
         {
@@ -50,18 +56,11 @@ namespace New_UI
             menuOpen(pnlInventory);
         }
 
-        private void btnAdmin_Click(object sender, EventArgs e)
-        {
-            menuOpen(pnlAdmin);
-        }
-
         private void iconButton1_Click(object sender, EventArgs e)
         {
             frmLogin login = new frmLogin();
             this.Close();
             login.Show();
-
         }
     }
-
 }
