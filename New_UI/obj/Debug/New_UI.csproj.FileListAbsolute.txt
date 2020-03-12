@@ -1,0 +1,12 @@
+E:\School_Related_Repository\Final_Project_OOP_POSS\New_UI\New_UI\bin\Debug\New_UI.exe.config
+E:\School_Related_Repository\Final_Project_OOP_POSS\New_UI\New_UI\bin\Debug\New_UI.exe
+E:\School_Related_Repository\Final_Project_OOP_POSS\New_UI\New_UI\bin\Debug\New_UI.pdb
+E:\School_Related_Repository\Final_Project_OOP_POSS\New_UI\New_UI\obj\Debug\New_UI.csprojAssemblyReference.cache
+E:\School_Related_Repository\Final_Project_OOP_POSS\New_UI\New_UI\obj\Debug\New_UI.frmLogin.resources
+E:\School_Related_Repository\Final_Project_OOP_POSS\New_UI\New_UI\obj\Debug\New_UI.Properties.Resources.resources
+E:\School_Related_Repository\Final_Project_OOP_POSS\New_UI\New_UI\obj\Debug\New_UI.csproj.GenerateResource.cache
+E:\School_Related_Repository\Final_Project_OOP_POSS\New_UI\New_UI\obj\Debug\New_UI.exe
+E:\School_Related_Repository\Final_Project_OOP_POSS\New_UI\New_UI\obj\Debug\New_UI.pdb
+E:\School_Related_Repository\Final_Project_OOP_POSS\New_UI\New_UI\bin\Debug\FontAwesome.Sharp.dll
+E:\School_Related_Repository\Final_Project_OOP_POSS\New_UI\New_UI\obj\Debug\New_UI.csproj.CopyComplete
+E:\School_Related_Repository\Final_Project_OOP_POSS\New_UI\New_UI\obj\Debug\New_UI.frmMain.resources
