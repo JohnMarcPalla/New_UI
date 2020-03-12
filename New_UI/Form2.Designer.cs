@@ -78,9 +78,9 @@
             this.pnlAdmin.Controls.Add(this.iconButton8);
             this.pnlAdmin.Controls.Add(this.iconButton9);
             this.pnlAdmin.Dock = System.Windows.Forms.DockStyle.Top;
-            this.pnlAdmin.Location = new System.Drawing.Point(0, 540);
+            this.pnlAdmin.Location = new System.Drawing.Point(0, 538);
             this.pnlAdmin.Name = "pnlAdmin";
-            this.pnlAdmin.Size = new System.Drawing.Size(266, 136);
+            this.pnlAdmin.Size = new System.Drawing.Size(266, 135);
             this.pnlAdmin.TabIndex = 19;
             // 
             // iconButton8
@@ -141,7 +141,7 @@
             this.btnAdmin.IconColor = System.Drawing.Color.Black;
             this.btnAdmin.IconSize = 25;
             this.btnAdmin.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnAdmin.Location = new System.Drawing.Point(0, 473);
+            this.btnAdmin.Location = new System.Drawing.Point(0, 471);
             this.btnAdmin.Name = "btnAdmin";
             this.btnAdmin.Padding = new System.Windows.Forms.Padding(20, 0, 0, 0);
             this.btnAdmin.Rotation = 0D;
@@ -158,9 +158,9 @@
             this.pnlInventory.Controls.Add(this.iconButton5);
             this.pnlInventory.Controls.Add(this.iconButton6);
             this.pnlInventory.Dock = System.Windows.Forms.DockStyle.Top;
-            this.pnlInventory.Location = new System.Drawing.Point(0, 337);
+            this.pnlInventory.Location = new System.Drawing.Point(0, 336);
             this.pnlInventory.Name = "pnlInventory";
-            this.pnlInventory.Size = new System.Drawing.Size(266, 136);
+            this.pnlInventory.Size = new System.Drawing.Size(266, 135);
             this.pnlInventory.TabIndex = 17;
             // 
             // iconButton5
@@ -221,7 +221,7 @@
             this.btnInventory.IconColor = System.Drawing.Color.Black;
             this.btnInventory.IconSize = 25;
             this.btnInventory.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnInventory.Location = new System.Drawing.Point(0, 270);
+            this.btnInventory.Location = new System.Drawing.Point(0, 269);
             this.btnInventory.Name = "btnInventory";
             this.btnInventory.Padding = new System.Windows.Forms.Padding(20, 0, 0, 0);
             this.btnInventory.Rotation = 0D;
@@ -240,7 +240,7 @@
             this.pnlSales.Dock = System.Windows.Forms.DockStyle.Top;
             this.pnlSales.Location = new System.Drawing.Point(0, 134);
             this.pnlSales.Name = "pnlSales";
-            this.pnlSales.Size = new System.Drawing.Size(266, 136);
+            this.pnlSales.Size = new System.Drawing.Size(266, 135);
             this.pnlSales.TabIndex = 15;
             // 
             // iconButton3
@@ -346,7 +346,7 @@
             this.pnlLogo.Controls.Add(this.label1);
             this.pnlLogo.Controls.Add(this.label3);
             this.pnlLogo.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.pnlLogo.Location = new System.Drawing.Point(0, 676);
+            this.pnlLogo.Location = new System.Drawing.Point(0, 673);
             this.pnlLogo.Name = "pnlLogo";
             this.pnlLogo.Size = new System.Drawing.Size(266, 128);
             this.pnlLogo.TabIndex = 0;
