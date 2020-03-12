@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.panel1 = new System.Windows.Forms.Panel();
+            this.pnlMain = new System.Windows.Forms.Panel();
             this.pnlAdmin = new System.Windows.Forms.Panel();
             this.iconButton8 = new FontAwesome.Sharp.IconButton();
             this.iconButton9 = new FontAwesome.Sharp.IconButton();
@@ -48,30 +48,34 @@
             this.lblCurUser = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
-            this.panel1.SuspendLayout();
+            this.pnlTitle = new System.Windows.Forms.Panel();
+            this.btnExit = new FontAwesome.Sharp.IconButton();
+            this.pnlChildform = new System.Windows.Forms.Panel();
+            this.pnlMain.SuspendLayout();
             this.pnlAdmin.SuspendLayout();
             this.pnlInventory.SuspendLayout();
             this.pnlSales.SuspendLayout();
             this.pnlLogo.SuspendLayout();
+            this.pnlTitle.SuspendLayout();
             this.SuspendLayout();
             // 
-            // panel1
+            // pnlMain
             // 
-            this.panel1.AutoScroll = true;
-            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(152)))), ((int)(((byte)(21)))), ((int)(((byte)(22)))));
-            this.panel1.Controls.Add(this.pnlAdmin);
-            this.panel1.Controls.Add(this.btnAdmin);
-            this.panel1.Controls.Add(this.pnlInventory);
-            this.panel1.Controls.Add(this.btnInventory);
-            this.panel1.Controls.Add(this.pnlSales);
-            this.panel1.Controls.Add(this.btnSales);
-            this.panel1.Controls.Add(this.btnHome);
-            this.panel1.Controls.Add(this.pnlLogo);
-            this.panel1.Dock = System.Windows.Forms.DockStyle.Left;
-            this.panel1.Location = new System.Drawing.Point(0, 0);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(283, 591);
-            this.panel1.TabIndex = 0;
+            this.pnlMain.AutoScroll = true;
+            this.pnlMain.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(152)))), ((int)(((byte)(21)))), ((int)(((byte)(22)))));
+            this.pnlMain.Controls.Add(this.pnlAdmin);
+            this.pnlMain.Controls.Add(this.btnAdmin);
+            this.pnlMain.Controls.Add(this.pnlInventory);
+            this.pnlMain.Controls.Add(this.btnInventory);
+            this.pnlMain.Controls.Add(this.pnlSales);
+            this.pnlMain.Controls.Add(this.btnSales);
+            this.pnlMain.Controls.Add(this.btnHome);
+            this.pnlMain.Controls.Add(this.pnlLogo);
+            this.pnlMain.Dock = System.Windows.Forms.DockStyle.Left;
+            this.pnlMain.Location = new System.Drawing.Point(0, 0);
+            this.pnlMain.Name = "pnlMain";
+            this.pnlMain.Size = new System.Drawing.Size(266, 700);
+            this.pnlMain.TabIndex = 0;
             // 
             // pnlAdmin
             // 
@@ -80,7 +84,7 @@
             this.pnlAdmin.Dock = System.Windows.Forms.DockStyle.Top;
             this.pnlAdmin.Location = new System.Drawing.Point(0, 538);
             this.pnlAdmin.Name = "pnlAdmin";
-            this.pnlAdmin.Size = new System.Drawing.Size(266, 135);
+            this.pnlAdmin.Size = new System.Drawing.Size(249, 135);
             this.pnlAdmin.TabIndex = 19;
             // 
             // iconButton8
@@ -99,7 +103,7 @@
             this.iconButton8.Name = "iconButton8";
             this.iconButton8.Padding = new System.Windows.Forms.Padding(50, 0, 0, 0);
             this.iconButton8.Rotation = 0D;
-            this.iconButton8.Size = new System.Drawing.Size(266, 67);
+            this.iconButton8.Size = new System.Drawing.Size(249, 67);
             this.iconButton8.TabIndex = 16;
             this.iconButton8.Text = "Create";
             this.iconButton8.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -122,7 +126,7 @@
             this.iconButton9.Name = "iconButton9";
             this.iconButton9.Padding = new System.Windows.Forms.Padding(50, 0, 0, 0);
             this.iconButton9.Rotation = 0D;
-            this.iconButton9.Size = new System.Drawing.Size(266, 67);
+            this.iconButton9.Size = new System.Drawing.Size(249, 67);
             this.iconButton9.TabIndex = 15;
             this.iconButton9.Text = "Manage Employee";
             this.iconButton9.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -145,7 +149,7 @@
             this.btnAdmin.Name = "btnAdmin";
             this.btnAdmin.Padding = new System.Windows.Forms.Padding(20, 0, 0, 0);
             this.btnAdmin.Rotation = 0D;
-            this.btnAdmin.Size = new System.Drawing.Size(266, 67);
+            this.btnAdmin.Size = new System.Drawing.Size(249, 67);
             this.btnAdmin.TabIndex = 18;
             this.btnAdmin.Text = "Admin";
             this.btnAdmin.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -160,7 +164,7 @@
             this.pnlInventory.Dock = System.Windows.Forms.DockStyle.Top;
             this.pnlInventory.Location = new System.Drawing.Point(0, 336);
             this.pnlInventory.Name = "pnlInventory";
-            this.pnlInventory.Size = new System.Drawing.Size(266, 135);
+            this.pnlInventory.Size = new System.Drawing.Size(249, 135);
             this.pnlInventory.TabIndex = 17;
             // 
             // iconButton5
@@ -179,7 +183,7 @@
             this.iconButton5.Name = "iconButton5";
             this.iconButton5.Padding = new System.Windows.Forms.Padding(50, 0, 0, 0);
             this.iconButton5.Rotation = 0D;
-            this.iconButton5.Size = new System.Drawing.Size(266, 67);
+            this.iconButton5.Size = new System.Drawing.Size(249, 67);
             this.iconButton5.TabIndex = 16;
             this.iconButton5.Text = "Inventory Report";
             this.iconButton5.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -202,7 +206,7 @@
             this.iconButton6.Name = "iconButton6";
             this.iconButton6.Padding = new System.Windows.Forms.Padding(50, 0, 0, 0);
             this.iconButton6.Rotation = 0D;
-            this.iconButton6.Size = new System.Drawing.Size(266, 67);
+            this.iconButton6.Size = new System.Drawing.Size(249, 67);
             this.iconButton6.TabIndex = 15;
             this.iconButton6.Text = "Manage Inventory";
             this.iconButton6.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -225,7 +229,7 @@
             this.btnInventory.Name = "btnInventory";
             this.btnInventory.Padding = new System.Windows.Forms.Padding(20, 0, 0, 0);
             this.btnInventory.Rotation = 0D;
-            this.btnInventory.Size = new System.Drawing.Size(266, 67);
+            this.btnInventory.Size = new System.Drawing.Size(249, 67);
             this.btnInventory.TabIndex = 16;
             this.btnInventory.Text = "Inventory";
             this.btnInventory.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -240,7 +244,7 @@
             this.pnlSales.Dock = System.Windows.Forms.DockStyle.Top;
             this.pnlSales.Location = new System.Drawing.Point(0, 134);
             this.pnlSales.Name = "pnlSales";
-            this.pnlSales.Size = new System.Drawing.Size(266, 135);
+            this.pnlSales.Size = new System.Drawing.Size(249, 135);
             this.pnlSales.TabIndex = 15;
             // 
             // iconButton3
@@ -259,7 +263,7 @@
             this.iconButton3.Name = "iconButton3";
             this.iconButton3.Padding = new System.Windows.Forms.Padding(50, 0, 0, 0);
             this.iconButton3.Rotation = 0D;
-            this.iconButton3.Size = new System.Drawing.Size(266, 67);
+            this.iconButton3.Size = new System.Drawing.Size(249, 67);
             this.iconButton3.TabIndex = 16;
             this.iconButton3.Text = "Sales Report";
             this.iconButton3.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -282,12 +286,13 @@
             this.iconButton2.Name = "iconButton2";
             this.iconButton2.Padding = new System.Windows.Forms.Padding(50, 0, 0, 0);
             this.iconButton2.Rotation = 0D;
-            this.iconButton2.Size = new System.Drawing.Size(266, 67);
+            this.iconButton2.Size = new System.Drawing.Size(249, 67);
             this.iconButton2.TabIndex = 15;
             this.iconButton2.Text = "Create Transaction";
             this.iconButton2.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.iconButton2.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.iconButton2.UseVisualStyleBackColor = false;
+            this.iconButton2.Click += new System.EventHandler(this.iconButton2_Click);
             // 
             // btnSales
             // 
@@ -305,7 +310,7 @@
             this.btnSales.Name = "btnSales";
             this.btnSales.Padding = new System.Windows.Forms.Padding(20, 0, 0, 0);
             this.btnSales.Rotation = 0D;
-            this.btnSales.Size = new System.Drawing.Size(266, 67);
+            this.btnSales.Size = new System.Drawing.Size(249, 67);
             this.btnSales.TabIndex = 14;
             this.btnSales.Text = "Sales";
             this.btnSales.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -329,7 +334,7 @@
             this.btnHome.Name = "btnHome";
             this.btnHome.Padding = new System.Windows.Forms.Padding(20, 0, 0, 0);
             this.btnHome.Rotation = 0D;
-            this.btnHome.Size = new System.Drawing.Size(266, 67);
+            this.btnHome.Size = new System.Drawing.Size(249, 67);
             this.btnHome.TabIndex = 13;
             this.btnHome.Text = "Home";
             this.btnHome.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -348,7 +353,7 @@
             this.pnlLogo.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.pnlLogo.Location = new System.Drawing.Point(0, 673);
             this.pnlLogo.Name = "pnlLogo";
-            this.pnlLogo.Size = new System.Drawing.Size(266, 128);
+            this.pnlLogo.Size = new System.Drawing.Size(249, 133);
             this.pnlLogo.TabIndex = 0;
             // 
             // iconButton1
@@ -363,10 +368,10 @@
             this.iconButton1.IconColor = System.Drawing.Color.Black;
             this.iconButton1.IconSize = 25;
             this.iconButton1.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.iconButton1.Location = new System.Drawing.Point(0, 87);
+            this.iconButton1.Location = new System.Drawing.Point(0, 92);
             this.iconButton1.Name = "iconButton1";
             this.iconButton1.Rotation = 0D;
-            this.iconButton1.Size = new System.Drawing.Size(266, 41);
+            this.iconButton1.Size = new System.Drawing.Size(249, 41);
             this.iconButton1.TabIndex = 12;
             this.iconButton1.Text = "Log Out";
             this.iconButton1.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
@@ -415,29 +420,71 @@
             this.label3.TabIndex = 8;
             this.label3.Text = "C H A I R /";
             // 
+            // pnlTitle
+            // 
+            this.pnlTitle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(152)))), ((int)(((byte)(21)))), ((int)(((byte)(22)))));
+            this.pnlTitle.Controls.Add(this.btnExit);
+            this.pnlTitle.Dock = System.Windows.Forms.DockStyle.Top;
+            this.pnlTitle.Location = new System.Drawing.Point(266, 0);
+            this.pnlTitle.Name = "pnlTitle";
+            this.pnlTitle.Size = new System.Drawing.Size(734, 30);
+            this.pnlTitle.TabIndex = 20;
+            this.pnlTitle.MouseDown += new System.Windows.Forms.MouseEventHandler(this.panel2_MouseDown);
+            // 
+            // btnExit
+            // 
+            this.btnExit.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(140)))), ((int)(((byte)(21)))), ((int)(((byte)(22)))));
+            this.btnExit.Dock = System.Windows.Forms.DockStyle.Right;
+            this.btnExit.FlatAppearance.BorderSize = 0;
+            this.btnExit.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnExit.Flip = FontAwesome.Sharp.FlipOrientation.Normal;
+            this.btnExit.IconChar = FontAwesome.Sharp.IconChar.Times;
+            this.btnExit.IconColor = System.Drawing.Color.Black;
+            this.btnExit.IconSize = 25;
+            this.btnExit.Location = new System.Drawing.Point(704, 0);
+            this.btnExit.Name = "btnExit";
+            this.btnExit.Rotation = 0D;
+            this.btnExit.Size = new System.Drawing.Size(30, 30);
+            this.btnExit.TabIndex = 0;
+            this.btnExit.UseVisualStyleBackColor = false;
+            this.btnExit.Click += new System.EventHandler(this.btnExit_Click);
+            // 
+            // pnlChildform
+            // 
+            this.pnlChildform.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.pnlChildform.Location = new System.Drawing.Point(266, 30);
+            this.pnlChildform.Name = "pnlChildform";
+            this.pnlChildform.Size = new System.Drawing.Size(734, 670);
+            this.pnlChildform.TabIndex = 21;
+            // 
             // frmMain
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(206)))), ((int)(((byte)(39)))), ((int)(((byte)(39)))));
-            this.ClientSize = new System.Drawing.Size(984, 591);
-            this.Controls.Add(this.panel1);
-            this.MinimumSize = new System.Drawing.Size(1000, 630);
+            this.ClientSize = new System.Drawing.Size(1000, 700);
+            this.Controls.Add(this.pnlChildform);
+            this.Controls.Add(this.pnlTitle);
+            this.Controls.Add(this.pnlMain);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.MinimumSize = new System.Drawing.Size(1000, 700);
             this.Name = "frmMain";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "ADMIN";
-            this.panel1.ResumeLayout(false);
+            this.pnlMain.ResumeLayout(false);
             this.pnlAdmin.ResumeLayout(false);
             this.pnlInventory.ResumeLayout(false);
             this.pnlSales.ResumeLayout(false);
             this.pnlLogo.ResumeLayout(false);
             this.pnlLogo.PerformLayout();
+            this.pnlTitle.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
 
         #endregion
 
-        private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.Panel pnlMain;
         private System.Windows.Forms.Panel pnlLogo;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label1;
@@ -457,5 +504,8 @@
         private FontAwesome.Sharp.IconButton iconButton9;
         private FontAwesome.Sharp.IconButton btnAdmin;
         public System.Windows.Forms.Label lblCurUser;
+        private System.Windows.Forms.Panel pnlTitle;
+        private FontAwesome.Sharp.IconButton btnExit;
+        private System.Windows.Forms.Panel pnlChildform;
     }
 }

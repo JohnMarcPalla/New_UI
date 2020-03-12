@@ -44,10 +44,13 @@
             this.lblCurUser = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
+            this.pnlTitle = new System.Windows.Forms.Panel();
+            this.btnExit = new FontAwesome.Sharp.IconButton();
             this.pnlMain.SuspendLayout();
             this.pnlInventory.SuspendLayout();
             this.pnlSales.SuspendLayout();
             this.pnlLogo.SuspendLayout();
+            this.pnlTitle.SuspendLayout();
             this.SuspendLayout();
             // 
             // pnlMain
@@ -62,7 +65,7 @@
             this.pnlMain.Dock = System.Windows.Forms.DockStyle.Left;
             this.pnlMain.Location = new System.Drawing.Point(0, 0);
             this.pnlMain.Name = "pnlMain";
-            this.pnlMain.Size = new System.Drawing.Size(266, 689);
+            this.pnlMain.Size = new System.Drawing.Size(266, 700);
             this.pnlMain.TabIndex = 0;
             // 
             // pnlInventory
@@ -200,6 +203,7 @@
             this.iconButton2.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.iconButton2.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.iconButton2.UseVisualStyleBackColor = false;
+            
             // 
             // btnSales
             // 
@@ -258,9 +262,9 @@
             this.pnlLogo.Controls.Add(this.label1);
             this.pnlLogo.Controls.Add(this.label3);
             this.pnlLogo.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.pnlLogo.Location = new System.Drawing.Point(0, 561);
+            this.pnlLogo.Location = new System.Drawing.Point(0, 567);
             this.pnlLogo.Name = "pnlLogo";
-            this.pnlLogo.Size = new System.Drawing.Size(266, 128);
+            this.pnlLogo.Size = new System.Drawing.Size(266, 133);
             this.pnlLogo.TabIndex = 23;
             // 
             // iconButton1
@@ -275,7 +279,7 @@
             this.iconButton1.IconColor = System.Drawing.Color.Black;
             this.iconButton1.IconSize = 25;
             this.iconButton1.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.iconButton1.Location = new System.Drawing.Point(0, 87);
+            this.iconButton1.Location = new System.Drawing.Point(0, 92);
             this.iconButton1.Name = "iconButton1";
             this.iconButton1.Rotation = 0D;
             this.iconButton1.Size = new System.Drawing.Size(266, 41);
@@ -327,20 +331,54 @@
             this.label3.TabIndex = 8;
             this.label3.Text = "C H A I R /";
             // 
+            // pnlTitle
+            // 
+            this.pnlTitle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(152)))), ((int)(((byte)(21)))), ((int)(((byte)(22)))));
+            this.pnlTitle.Controls.Add(this.btnExit);
+            this.pnlTitle.Dock = System.Windows.Forms.DockStyle.Top;
+            this.pnlTitle.Location = new System.Drawing.Point(266, 0);
+            this.pnlTitle.Name = "pnlTitle";
+            this.pnlTitle.Size = new System.Drawing.Size(734, 30);
+            this.pnlTitle.TabIndex = 21;
+            this.pnlTitle.MouseDown += new System.Windows.Forms.MouseEventHandler(this.pnlTitle_MouseDown);
+            // 
+            // btnExit
+            // 
+            this.btnExit.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(140)))), ((int)(((byte)(21)))), ((int)(((byte)(22)))));
+            this.btnExit.Dock = System.Windows.Forms.DockStyle.Right;
+            this.btnExit.FlatAppearance.BorderSize = 0;
+            this.btnExit.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnExit.Flip = FontAwesome.Sharp.FlipOrientation.Normal;
+            this.btnExit.IconChar = FontAwesome.Sharp.IconChar.Times;
+            this.btnExit.IconColor = System.Drawing.Color.Black;
+            this.btnExit.IconSize = 25;
+            this.btnExit.Location = new System.Drawing.Point(704, 0);
+            this.btnExit.Name = "btnExit";
+            this.btnExit.Rotation = 0D;
+            this.btnExit.Size = new System.Drawing.Size(30, 30);
+            this.btnExit.TabIndex = 1;
+            this.btnExit.UseVisualStyleBackColor = false;
+            this.btnExit.Click += new System.EventHandler(this.btnExit_Click);
+            // 
             // frmEmployee
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(206)))), ((int)(((byte)(39)))), ((int)(((byte)(39)))));
-            this.ClientSize = new System.Drawing.Size(1052, 689);
+            this.ClientSize = new System.Drawing.Size(1000, 700);
+            this.Controls.Add(this.pnlTitle);
             this.Controls.Add(this.pnlMain);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.MinimumSize = new System.Drawing.Size(1000, 700);
             this.Name = "frmEmployee";
-            this.Text = "Form3";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.Text = "Cashier";
             this.pnlMain.ResumeLayout(false);
             this.pnlInventory.ResumeLayout(false);
             this.pnlSales.ResumeLayout(false);
             this.pnlLogo.ResumeLayout(false);
             this.pnlLogo.PerformLayout();
+            this.pnlTitle.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -363,5 +401,7 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label3;
         public System.Windows.Forms.Label lblCurUser;
+        private System.Windows.Forms.Panel pnlTitle;
+        private FontAwesome.Sharp.IconButton btnExit;
     }
 }
