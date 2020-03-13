@@ -29,20 +29,15 @@
         private void InitializeComponent()
         {
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.clProdID = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.clProdName = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.clProdPrice = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.clQty = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.clTotal = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.btnRemove = new FontAwesome.Sharp.IconButton();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.btnCheckout = new FontAwesome.Sharp.IconButton();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.label1 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
-            this.textBox2 = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
             this.textBox3 = new System.Windows.Forms.TextBox();
+            this.label2 = new System.Windows.Forms.Label();
+            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.label1 = new System.Windows.Forms.Label();
+            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.btnCheckout = new FontAwesome.Sharp.IconButton();
             this.label4 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.textBox4 = new System.Windows.Forms.TextBox();
@@ -65,51 +60,11 @@
             this.dataGridView1.AllowUserToDeleteRows = false;
             this.dataGridView1.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(237)))), ((int)(((byte)(54)))), ((int)(((byte)(56)))));
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.clProdID,
-            this.clProdName,
-            this.clProdPrice,
-            this.clQty,
-            this.clTotal});
             this.dataGridView1.Location = new System.Drawing.Point(34, 225);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.ReadOnly = true;
             this.dataGridView1.Size = new System.Drawing.Size(463, 360);
             this.dataGridView1.TabIndex = 0;
-            // 
-            // clProdID
-            // 
-            this.clProdID.HeaderText = "Product ID";
-            this.clProdID.Name = "clProdID";
-            this.clProdID.ReadOnly = true;
-            // 
-            // clProdName
-            // 
-            this.clProdName.HeaderText = "Product Name";
-            this.clProdName.Name = "clProdName";
-            this.clProdName.ReadOnly = true;
-            this.clProdName.Width = 120;
-            // 
-            // clProdPrice
-            // 
-            this.clProdPrice.HeaderText = "Unit Price";
-            this.clProdPrice.Name = "clProdPrice";
-            this.clProdPrice.ReadOnly = true;
-            this.clProdPrice.Width = 80;
-            // 
-            // clQty
-            // 
-            this.clQty.HeaderText = "Qty.";
-            this.clQty.Name = "clQty";
-            this.clQty.ReadOnly = true;
-            this.clQty.Width = 40;
-            // 
-            // clTotal
-            // 
-            this.clTotal.HeaderText = "Total";
-            this.clTotal.Name = "clTotal";
-            this.clTotal.ReadOnly = true;
-            this.clTotal.Width = 80;
             // 
             // btnRemove
             // 
@@ -147,43 +102,23 @@
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Summary";
             // 
-            // btnCheckout
+            // label3
             // 
-            this.btnCheckout.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(252)))), ((int)(((byte)(131)))), ((int)(((byte)(130)))));
-            this.btnCheckout.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.btnCheckout.FlatAppearance.BorderSize = 0;
-            this.btnCheckout.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnCheckout.Flip = FontAwesome.Sharp.FlipOrientation.Normal;
-            this.btnCheckout.IconChar = FontAwesome.Sharp.IconChar.ShoppingCart;
-            this.btnCheckout.IconColor = System.Drawing.Color.Black;
-            this.btnCheckout.IconSize = 23;
-            this.btnCheckout.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btnCheckout.Location = new System.Drawing.Point(3, 201);
-            this.btnCheckout.Name = "btnCheckout";
-            this.btnCheckout.Rotation = 0D;
-            this.btnCheckout.Size = new System.Drawing.Size(194, 40);
-            this.btnCheckout.TabIndex = 0;
-            this.btnCheckout.Text = "Checkout";
-            this.btnCheckout.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.btnCheckout.UseVisualStyleBackColor = false;
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F);
+            this.label3.Location = new System.Drawing.Point(6, 142);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(61, 22);
+            this.label3.TabIndex = 6;
+            this.label3.Text = "Total :";
             // 
-            // textBox1
+            // textBox3
             // 
-            this.textBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F);
-            this.textBox1.Location = new System.Drawing.Point(6, 55);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(188, 27);
-            this.textBox1.TabIndex = 1;
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F);
-            this.label1.Location = new System.Drawing.Point(6, 30);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(92, 22);
-            this.label1.TabIndex = 2;
-            this.label1.Text = "Sub-total :";
+            this.textBox3.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F);
+            this.textBox3.Location = new System.Drawing.Point(6, 167);
+            this.textBox3.Name = "textBox3";
+            this.textBox3.Size = new System.Drawing.Size(188, 27);
+            this.textBox3.TabIndex = 5;
             // 
             // label2
             // 
@@ -203,23 +138,43 @@
             this.textBox2.Size = new System.Drawing.Size(188, 27);
             this.textBox2.TabIndex = 3;
             // 
-            // label3
+            // label1
             // 
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F);
-            this.label3.Location = new System.Drawing.Point(6, 142);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(61, 22);
-            this.label3.TabIndex = 6;
-            this.label3.Text = "Total :";
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F);
+            this.label1.Location = new System.Drawing.Point(6, 30);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(92, 22);
+            this.label1.TabIndex = 2;
+            this.label1.Text = "Sub-total :";
             // 
-            // textBox3
+            // textBox1
             // 
-            this.textBox3.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F);
-            this.textBox3.Location = new System.Drawing.Point(6, 167);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(188, 27);
-            this.textBox3.TabIndex = 5;
+            this.textBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F);
+            this.textBox1.Location = new System.Drawing.Point(6, 55);
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(188, 27);
+            this.textBox1.TabIndex = 1;
+            // 
+            // btnCheckout
+            // 
+            this.btnCheckout.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(252)))), ((int)(((byte)(131)))), ((int)(((byte)(130)))));
+            this.btnCheckout.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.btnCheckout.FlatAppearance.BorderSize = 0;
+            this.btnCheckout.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnCheckout.Flip = FontAwesome.Sharp.FlipOrientation.Normal;
+            this.btnCheckout.IconChar = FontAwesome.Sharp.IconChar.ShoppingCart;
+            this.btnCheckout.IconColor = System.Drawing.Color.Black;
+            this.btnCheckout.IconSize = 23;
+            this.btnCheckout.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnCheckout.Location = new System.Drawing.Point(3, 201);
+            this.btnCheckout.Name = "btnCheckout";
+            this.btnCheckout.Rotation = 0D;
+            this.btnCheckout.Size = new System.Drawing.Size(194, 40);
+            this.btnCheckout.TabIndex = 0;
+            this.btnCheckout.Text = "Checkout";
+            this.btnCheckout.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btnCheckout.UseVisualStyleBackColor = false;
             // 
             // label4
             // 
@@ -390,11 +345,6 @@
         #endregion
 
         private System.Windows.Forms.DataGridView dataGridView1;
-        private System.Windows.Forms.DataGridViewTextBoxColumn clProdID;
-        private System.Windows.Forms.DataGridViewTextBoxColumn clProdName;
-        private System.Windows.Forms.DataGridViewTextBoxColumn clProdPrice;
-        private System.Windows.Forms.DataGridViewTextBoxColumn clQty;
-        private System.Windows.Forms.DataGridViewTextBoxColumn clTotal;
         private FontAwesome.Sharp.IconButton btnRemove;
         private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.Label label3;

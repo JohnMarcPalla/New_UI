@@ -62,6 +62,10 @@ namespace New_UI
         {
             menuOpen(pnlInventory);
         }
+        private void iconButton6_Click(object sender, EventArgs e)
+        {
+            openChildform(new frmMngInv());
+        }
 
         private void btnAdmin_Click(object sender, EventArgs e)
         {
@@ -111,8 +115,6 @@ namespace New_UI
             childform.BringToFront();
             childform.Show();
         }
-
-        
     }
 
 }
