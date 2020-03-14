@@ -71,6 +71,10 @@ namespace New_UI
         {
             menuOpen(pnlAdmin);
         }
+        private void iconButton9_Click(object sender, EventArgs e)
+        {
+            openChildform(new frmMngEmp());
+        }
 
         private void iconButton1_Click(object sender, EventArgs e)
         {

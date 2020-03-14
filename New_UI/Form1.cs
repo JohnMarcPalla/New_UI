@@ -1,4 +1,5 @@
-﻿using System;
+﻿using MongoDB.Driver;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -17,6 +18,9 @@ namespace New_UI
         {
             InitializeComponent();
         }
+        static MongoClient client = new MongoClient();
+        static IMongoDatabase db = client.GetDatabase("chairDB");
+        static IMongoCollection<userDB> collection = db.GetCollection<userDB>("usersID");
 
         private void btnLogin_Click(object sender, EventArgs e)
         {

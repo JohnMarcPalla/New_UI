@@ -42,12 +42,7 @@ namespace New_UI
             textBox4.Text = dataGridView1.Rows[e.RowIndex].Cells[4].Value.ToString();
         }
 
-        private void btnCheckout_Click(object sender, EventArgs e)
-        {
-            dbclass s = new dbclass(int.Parse(textBox1.Text), textBox2.Text, Double.Parse(textBox3.Text), int.Parse(textBox4.Text));
-            collection.InsertOne(s);
-            Read();
-        }
+        
 
         private void iconButton1_Click(object sender, EventArgs e)
         {
@@ -60,6 +55,13 @@ namespace New_UI
         private void iconButton2_Click(object sender, EventArgs e)
         {
             collection.DeleteOne(s => s.Id == ObjectId.Parse(label6.Text));
+            Read();
+        }
+
+        private void btnAddProd_Click(object sender, EventArgs e)
+        {
+            dbclass s = new dbclass(int.Parse(textBox1.Text), textBox2.Text, Double.Parse(textBox3.Text), int.Parse(textBox4.Text));
+            collection.InsertOne(s);
             Read();
         }
     }
