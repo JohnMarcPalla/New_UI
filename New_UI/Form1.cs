@@ -17,14 +17,18 @@ namespace New_UI
         public frmLogin()
         {
             InitializeComponent();
+
         }
         static MongoClient client = new MongoClient();
         static IMongoDatabase db = client.GetDatabase("chairDB");
         static IMongoCollection<userDB> collection = db.GetCollection<userDB>("usersID");
-
         private void btnLogin_Click(object sender, EventArgs e)
         {
-            if (textBox1.Text == "admin" && textBox2.Text == "password") 
+            List<userDB> list = collection.AsQueryable().ToList<userDB>();
+            
+            var userQuery_username = list.Any(p => String.Equals(p.Username, textBox1.Text, StringComparison.CurrentCulture));
+            var userQuery_password = list.Any(p => String.Equals(p.Password, textBox2.Text, StringComparison.CurrentCulture));
+            if (textBox1.Text == "admin" && textBox2.Text == "password")
             {
                 frmMain main = new frmMain();
                 main.lblCurUser.Text = textBox1.Text;
@@ -32,7 +36,7 @@ namespace New_UI
                 main.Show();
 
             }
-            else if (textBox1.Text == "user" && textBox2.Text == "pass")
+            else if (userQuery_username && userQuery_password == true)
             {
                 frmEmployee employee = new frmEmployee();
                 employee.lblCurUser.Text = textBox1.Text;
